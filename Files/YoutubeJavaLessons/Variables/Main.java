@@ -3,13 +3,13 @@ package Variables;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Ogrenci sayisi: 9");
+        System.out.println("Student count: 9");
 
-        int ogrenciSayisi = 10;
-        System.out.println("Ogrenci sayisi: " + ogrenciSayisi);
+        int studentCount = 10;
+        System.out.println("Student count:: " + studentCount);
 
-        String message = "Ogrenci sayisi: ";
-        System.out.println(message + ogrenciSayisi);
+        String message = "Student count:: ";
+        System.out.println(message + studentCount);
 
     }
 }
