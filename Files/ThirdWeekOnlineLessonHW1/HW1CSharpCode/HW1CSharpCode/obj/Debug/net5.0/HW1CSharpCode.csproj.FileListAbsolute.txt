@@ -1,0 +1,16 @@
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\bin\Debug\net5.0\HW1CSharpCode.exe
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\bin\Debug\net5.0\HW1CSharpCode.deps.json
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\bin\Debug\net5.0\HW1CSharpCode.runtimeconfig.json
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\bin\Debug\net5.0\HW1CSharpCode.runtimeconfig.dev.json
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\bin\Debug\net5.0\HW1CSharpCode.dll
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\bin\Debug\net5.0\HW1CSharpCode.pdb
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\obj\Debug\net5.0\HW1CSharpCode.csproj.AssemblyReference.cache
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\obj\Debug\net5.0\HW1CSharpCode.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\obj\Debug\net5.0\HW1CSharpCode.AssemblyInfoInputs.cache
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\obj\Debug\net5.0\HW1CSharpCode.AssemblyInfo.cs
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\obj\Debug\net5.0\HW1CSharpCode.csproj.CoreCompileInputs.cache
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\obj\Debug\net5.0\HW1CSharpCode.dll
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\obj\Debug\net5.0\refint\HW1CSharpCode.dll
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\obj\Debug\net5.0\HW1CSharpCode.pdb
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\obj\Debug\net5.0\HW1CSharpCode.genruntimeconfig.cache
+D:\Codes\KodlamaIOFiles\Files\ThirdWeekOnlineLessonHW1\HW1CSharpCode\HW1CSharpCode\obj\Debug\net5.0\ref\HW1CSharpCode.dll
