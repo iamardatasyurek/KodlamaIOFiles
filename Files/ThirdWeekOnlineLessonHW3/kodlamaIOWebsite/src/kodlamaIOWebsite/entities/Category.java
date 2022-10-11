@@ -4,26 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Category {
+	private static int objectId = 1;
 	private int id;
 	private String name;
 	private List<Course> courses;
 	
 	public Category() {
+		id = objectId;
+		objectId++;
 		this.courses = new ArrayList<Course>();
 	}
 
-	public Category(int id, String name) {
-		this.id = id;
+	public Category(String name) {
+		id = objectId;
+		objectId++;
 		this.name = name;
 		this.courses = new ArrayList<Course>();
 	}
 
 	public int getId() {
 		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -37,8 +37,9 @@ public class Category {
 	public List<Course> getCourses() {
 		return courses;
 	}
-
-	public void setCourses(List<Course> courses) {
-		this.courses = courses;
+	
+	@Override
+	public String toString() {
+		return getName();
 	}
 }

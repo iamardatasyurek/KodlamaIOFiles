@@ -4,17 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Educator{
+	private static int objectId = 1;
 	private int id;
 	private String firstName;
 	private String lastName;
 	private List<Course> courses;
 	
 	public Educator() {
+		id = objectId;
+		objectId++;
 		this.courses = new ArrayList<Course>();
 	}
 
-	public Educator(int id, String firstName, String lastName) {
-		this.id = id;
+	public Educator(String firstName, String lastName) {
+		id = objectId;
+		objectId++;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.courses = new ArrayList<Course>();
@@ -22,10 +26,6 @@ public class Educator{
 
 	public int getId() {
 		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getFirstName() {
@@ -48,7 +48,8 @@ public class Educator{
 		return courses;
 	}
 
-	public void setCourses(List<Course> courses) {
-		this.courses = courses;
+	@Override
+	public String toString() {
+		return getFirstName() + " " + getLastName();
 	}
 }

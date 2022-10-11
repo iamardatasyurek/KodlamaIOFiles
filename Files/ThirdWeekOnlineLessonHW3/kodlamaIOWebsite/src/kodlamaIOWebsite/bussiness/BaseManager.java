@@ -9,16 +9,22 @@ import kodlamaIOWebsite.dataAccess.*;
 public abstract class BaseManager<T> {
 	protected GenericDal<T> genericDal;
 	protected List<Logger> loggers;
-	protected List<T> item;
+	protected List<T> items;
 	
+	public BaseManager() {
+		items = new ArrayList<T>();
+	}
+
 	public BaseManager(GenericDal<T> genericDal, List<Logger> loggers) {
 		this.genericDal = genericDal;
 		this.loggers = loggers;
-		item = new ArrayList<T>();
+		items = new ArrayList<T>();
 	}
-
+	
 	public abstract void add(T t) throws Exception;
-
+	public abstract void update(T t);
+	public abstract void delete(T t);
+	
 	public GenericDal<T> getGenericDal() {
 		return genericDal;
 	}
@@ -36,10 +42,6 @@ public abstract class BaseManager<T> {
 	}
 
 	public List<T> getItem() {
-		return item;
-	}
-
-	public void setItem(List<T> item) {
-		this.item = item;
+		return items;
 	}
 }

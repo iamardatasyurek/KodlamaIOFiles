@@ -15,19 +15,38 @@ public class CategoriesManager extends BaseManager<Category>{
 	@Override
 	public void add(Category t) throws Exception {
 		boolean isExist = false;
-		for (Category category : item) {
+		for (Category category : items) {
 			if(t.getName() == category.getName()) {
 				isExist = true;
 				throw new Exception("The category with this name already exists.");
 			} 
 		}
+		
 		if(!isExist) {
-			this.item.add(t);
+			this.items.add(t);
 			this.genericDal.add(t);
 			for (Logger logger : loggers) {
-				logger.log(t.getName());
+				logger.log(t.toString());
 			}
+			
+			//other operations
 		}
 	}
 
+	@Override
+	public void update(Category t) {
+		System.out.println(t.toString()+" is updated");
+		this.genericDal.update(t);
+		
+		//other operations
+	}
+
+	@Override
+	public void delete(Category t) {
+		System.out.println(t.toString()+" is deleted");
+		this.genericDal.delete(t);
+		this.items.remove(t);
+		
+		//other operations
+	}
 }

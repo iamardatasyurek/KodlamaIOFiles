@@ -14,11 +14,29 @@ public class EducatorsManager extends BaseManager<Educator>{
 
 	@Override
 	public void add(Educator t) {
-		this.item.add(t);
+		this.items.add(t);
 		this.genericDal.add(t);
 		for (Logger logger : loggers) {
-			logger.log(t.getFirstName()+ " " + t.getLastName());
+			logger.log(t.toString());
 		}
+		
+		//other operations
 	}
 
+	@Override
+	public void update(Educator t){
+		System.out.println(t.toString()+" is updated");
+		this.genericDal.update(t);
+		
+		//other operations
+	}
+
+	@Override
+	public void delete(Educator t) {
+		System.out.println(t.toString()+" is deleted");
+		this.genericDal.delete(t);
+		this.items.remove(t);
+		
+		//other operations
+	}
 }
