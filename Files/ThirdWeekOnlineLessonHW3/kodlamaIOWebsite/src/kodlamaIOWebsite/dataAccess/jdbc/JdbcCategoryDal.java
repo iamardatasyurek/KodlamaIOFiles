@@ -6,17 +6,17 @@ import kodlamaIOWebsite.entities.Category;
 public class JdbcCategoryDal implements CategoryDal {
 
 	@Override
-	public void add(Category t) {
-		System.out.println("Category is added with JDBC : " + t.toString());
+	public void add(Category entity) {
+		System.out.println("Category is added with JDBC : " + entity.toString());
 	}
 
 	@Override
-	public void update(Category t) {
-		System.out.println("Category is updated with JDBC : " + t.toString());
+	public void update(Category entity) {
+		System.out.println("Category is updated with JDBC : " + entity.toString());
 	}
 
 	@Override
-	public void delete(Category t) {
-		System.out.println("Category is deleted with JDBC : " + t.toString());
+	public void delete(Category entity) {
+		System.out.println("Category is deleted with JDBC : " + entity.toString());
 	}
 }

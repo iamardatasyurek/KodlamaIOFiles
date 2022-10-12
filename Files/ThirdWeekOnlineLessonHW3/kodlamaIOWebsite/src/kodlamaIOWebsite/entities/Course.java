@@ -1,7 +1,7 @@
 package kodlamaIOWebsite.entities;
 
-public class Course {
-	private static int objectId = 1;
+public class Course implements Entity{
+	private static int classId = 1;
 	private int id;
 	private String name;
 	private String description;
@@ -10,13 +10,13 @@ public class Course {
 	private double price;
 	
 	public Course() {
-		id = objectId;
-		objectId++;
+		id = classId;
+		classId++;
 	}
 
 	public Course(String name, String description, Educator educator, Category category, double price) {
-		id = objectId;
-		objectId++;
+		id = classId;
+		classId++;
 		this.name = name;
 		this.description = description;
 		this.educator = educator;

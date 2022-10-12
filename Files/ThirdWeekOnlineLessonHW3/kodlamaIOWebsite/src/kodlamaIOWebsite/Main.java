@@ -17,9 +17,9 @@ public class Main {
 		loggers.add(new DatabaseLogger());
 		loggers.add(new MailLogger());
 		
-		BaseManager<Category> categoriesManager = new CategoriesManager(new HibernateCategoryDal(), loggers) ;
-		BaseManager<Educator> educatorsManager = new EducatorsManager(new HibernateEducatorDal(), loggers) ;
-		BaseManager<Course> coursesManager = new CoursesManager(new JdbcCourseDal(), loggers) ;
+		BaseManager<Category> categoriesManager = new CategoryManager(new HibernateCategoryDal(), loggers) ;
+		BaseManager<Educator> educatorsManager = new EducatorManager(new HibernateEducatorDal(), loggers) ;
+		BaseManager<Course> coursesManager = new CourseManager(new JdbcCourseDal(), loggers) ;
 		
 		Category backend = new Category("Backend Developer");
 		categoriesManager.add(backend);
@@ -45,14 +45,14 @@ public class Main {
 		coursesManager.add(javaScript);
 		System.out.println("-------------------------------------------------");
 		
-		for (Course course : coursesManager.getItem()) {
+		for (Course course : coursesManager.getListOfEntities()) {
 			System.out.println(course.getId()+" - "+course.getName());
 		}
 		System.out.println("-------------------------------------------------");
 		coursesManager.update(dotNet);
 		coursesManager.delete(dotNet);
 		System.out.println("-------------------------------------------------");
-		for (Course course : coursesManager.getItem()) {
+		for (Course course : coursesManager.getListOfEntities()) {
 			System.out.println(course.getId()+" - "+course.getName());
 		}
 	}

@@ -6,18 +6,18 @@ import kodlamaIOWebsite.entities.Course;
 public class HibernateCourseDal implements CourseDal{
 
 	@Override
-	public void add(Course t) {
-		System.out.println("Course is added with Hibernate : " + t.toString());		
+	public void add(Course entity) {
+		System.out.println("Course is added with Hibernate : " + entity.toString());		
 	}
 
 	@Override
-	public void update(Course t) {
-		System.out.println("Course is updated with Hibernate : " + t.toString());	
+	public void update(Course entity) {
+		System.out.println("Course is updated with Hibernate : " + entity.toString());	
 	}
 
 	@Override
-	public void delete(Course t) {
-		System.out.println("Course is deleted with Hibernate : " + t.toString());
+	public void delete(Course entity) {
+		System.out.println("Course is deleted with Hibernate : " + entity.toString());
 	}
 
 }

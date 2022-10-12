@@ -3,21 +3,21 @@ package kodlamaIOWebsite.entities;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Category {
-	private static int objectId = 1;
+public class Category implements Entity{
+	private static int classId = 1;
 	private int id;
 	private String name;
 	private List<Course> courses;
 	
 	public Category() {
-		id = objectId;
-		objectId++;
+		id = classId;
+		classId++;
 		this.courses = new ArrayList<Course>();
 	}
 
 	public Category(String name) {
-		id = objectId;
-		objectId++;
+		id = classId;
+		classId++;
 		this.name = name;
 		this.courses = new ArrayList<Course>();
 	}

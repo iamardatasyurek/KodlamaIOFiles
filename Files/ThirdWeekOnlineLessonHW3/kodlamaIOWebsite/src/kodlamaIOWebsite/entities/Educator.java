@@ -3,22 +3,22 @@ package kodlamaIOWebsite.entities;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Educator{
-	private static int objectId = 1;
+public class Educator implements Entity{
+	private static int classId = 1;
 	private int id;
 	private String firstName;
 	private String lastName;
 	private List<Course> courses;
 	
 	public Educator() {
-		id = objectId;
-		objectId++;
+		id = classId;
+		classId++;
 		this.courses = new ArrayList<Course>();
 	}
 
 	public Educator(String firstName, String lastName) {
-		id = objectId;
-		objectId++;
+		id = classId;
+		classId++;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.courses = new ArrayList<Course>();
