@@ -5,9 +5,8 @@ import java.util.List;
 import kodlamaIOWebsite.core.logging.Logger;
 import kodlamaIOWebsite.dataAccess.*;
 import kodlamaIOWebsite.entities.Category;
-import kodlamaIOWebsite.entities.Entity;
 
-public class CategoryManager extends BaseManager<Category> implements Validator{
+public class CategoryManager extends BaseManager<Category> implements Validator<Category>{
 
 	public CategoryManager(GenericDal<Category> genericDal, List<Logger> loggers) {
 		super(genericDal, loggers);
@@ -16,6 +15,7 @@ public class CategoryManager extends BaseManager<Category> implements Validator{
 	@Override
 	public void add(Category entity) throws Exception {
 		validate(entity);
+		
 		this.listOfEntities.add(entity);
 		this.genericDal.add(entity);
 		for (Logger logger : loggers) {
@@ -41,10 +41,12 @@ public class CategoryManager extends BaseManager<Category> implements Validator{
 		//other operations
 	}
 
+	
+
 	@Override
-	public <T extends Entity> void validate(T entity) throws Exception {
+	public void validate(Category entity) throws Exception {
 		for (Category category : listOfEntities) {
-			if(((Category) entity).getName() == category.getName()) {
+			if(entity.getName() == category.getName()) {
 				throw new Exception("The category with this name already exists.");
 			} 
 		}
